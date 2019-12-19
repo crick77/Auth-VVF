@@ -48,8 +48,7 @@ public class ActiveDirectoryService {
     Control[] connCtls = new Control[]{new FastBindConnectionControl()};
 
     @PostConstruct
-    @WebMethod(exclude = true)
-    public void initialize() {
+    private void initialize() {
         if (adServers == null) {
             throw new EJBException("Server di ActiveDirectory non specificati.");
         }
@@ -247,7 +246,6 @@ public class ActiveDirectoryService {
     }
     
     class FastBindConnectionControl implements Control {
-
         @Override
         public String getID() {
             return "1.2.840.113556.1.4.1781";
