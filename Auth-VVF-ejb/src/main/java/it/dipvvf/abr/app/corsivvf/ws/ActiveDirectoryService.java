@@ -48,7 +48,7 @@ public class ActiveDirectoryService {
     Control[] connCtls = new Control[]{new FastBindConnectionControl()};
 
     @PostConstruct
-    private void initialize() {
+    void initialize() {
         if (adServers == null) {
             throw new EJBException("Server di ActiveDirectory non specificati.");
         }
