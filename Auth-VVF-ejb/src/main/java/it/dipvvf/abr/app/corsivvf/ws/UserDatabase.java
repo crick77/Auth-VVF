@@ -16,7 +16,7 @@ import java.util.Map;
  * @author ospite
  */
 public final class UserDatabase {
-    private final static UserDatabase _instance = new UserDatabase();
+    private final static UserDatabase INSTANCE = new UserDatabase();
     private final Map<String, String> users;
     private final Map<String, List<String>> groups;
     
@@ -34,7 +34,7 @@ public final class UserDatabase {
     }
     
     public static UserDatabase connect() {
-        return _instance;
+        return INSTANCE;
     }
     
     public boolean checkUser(String username, String password) {
