@@ -28,8 +28,8 @@ public final class UserDatabase {
         users.put("user1", "pass1");
         users.put("user2", "pass2");
         
-        groups.put("admin", Arrays.asList(new String[] {"GAdmin", "GCorsiVVF"}));
-        groups.put("user1", Arrays.asList(new String[] {"GCorsiVVF", "GOtherApp"}));
+        groups.put("admin", Arrays.asList(new String[] {"GAdmin", "GCorsi"}));
+        groups.put("user1", Arrays.asList(new String[] {"GCorsi", "GOtherApp"}));
         groups.put("user1", Arrays.asList(new String[] {"GOtherApp"}));
     }
     
